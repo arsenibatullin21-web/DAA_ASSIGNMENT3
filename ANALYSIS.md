@@ -98,7 +98,7 @@ The supplied public checker passed all 36 cases, including 2,000-vertex deep SCC
 
 `tests/Benchmark.java` is reproducible. It uses seed `254866 + n`, creates a connected graph with `m = 8n` (a chain first, then random edges), and uses exactly the same graph for both methods. Before timings it verifies matching MSF costs, acyclicity and one component. One untimed warm-up run per algorithm is executed. Each displayed result is three timed runs; the median is reported.
 
-Timer: `System.nanoTime()`. Runtime: `java -Xmx384m` with JDK 25, compiled with `javac --release 17`, on the Windows desktop environment. Exact CPU/RAM information was not available from the restricted execution environment; replace this sentence with your laptop’s processor and RAM before final submission if your teacher requires it. Graph generation, compilation, JSON serialization and console output are excluded. Conversion from the already-created JSON-like request rows into the algorithm’s adjacency/edge arrays is included equally for both methods.
+Timer: `System.nanoTime()`. Runtime: `java -Xmx384m` with JDK 25, compiled with `javac --release 17`, on Microsoft Windows 11 Pro with a 13th Gen Intel Core i7-13650HX processor and 24 GB RAM. Graph generation, compilation, JSON serialization and console output are excluded. Conversion from the already-created JSON-like request rows into the algorithm’s adjacency/edge arrays is included equally for both methods.
 
 Command:
 
